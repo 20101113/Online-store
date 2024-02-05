@@ -1,0 +1,127 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #6a9c91; /* Updated background color */
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #f2f2f2; /* Updated text color */
+}
+
+.product-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.product-item {
+  width: 45%;
+  margin: 10px;
+  border: 1px solid #617073; /* Updated border color */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f8f8f8; /* Updated background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Increased scale on hover */
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  max-width: 150px;
+  margin-right: 20px; /* Reduced margin for better spacing */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-info img:hover {
+  transform: scale(1.1);
+}
+
+.product-description {
+  color: #333;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  background-color: #49a078; /* Updated button color */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #3e825d; /* Darker color on hover */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #846361;
+  cursor: not-allowed;
+}
+
+.shopping-cart {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #3e3e3e; /* Updated background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Darker box shadow */
+  padding: 20px;
+  animation: fadeInUp 0.8s ease-in-out; /* Slower fadeInUp animation */
+}
+
+.shopping-cart h2 {
+  text-align: center;
+  color: #f2f2f2; /* Updated text color */
+}
+
+.shopping-cart ul {
+  padding: 0;
+}
+
+.shopping-cart li {
+  border-bottom: 1px solid #555; /* Darker border color */
+  padding: 10px 0;
+  color: #ddd; /* Updated text color */
+}
+
+.shopping-cart li:last-child {
+  border-bottom: none;
+}
